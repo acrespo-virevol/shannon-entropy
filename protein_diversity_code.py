@@ -27,15 +27,8 @@ def shannon_info(site, AAs=AAs):
     return abs(temp_info)
 
 
-LG_aa_order = ['A','R','N','D','C','Q','E','G','H','I','L','K','M','F','P','S','T','W','Y','V']
 B50_aa_order = ['A','R','N','D','C','Q','E','G','H','I','L','K','M','F','P','S','T','W','Y','V','B','J','Z','X','*']
 
-#choose substitution matrix:
-#original LG
-#LG = pd.read_csv("LG.csv",header=0, index_col=0)
-#LG with bottom half (exclusive of the diagnal) proportions sum to 1
-#Don't use this, only inflates values
-#substitution_matrix = pd.read_csv("./protein_diversity/LG-1.csv",header=0, index_col=0)
 
 B50 = pd.read_table("BLOSUM50.tab",header=None,index_col=None,names=B50_aa_order)
 B50.set_index(pd.Series(B50_aa_order),inplace=True)
