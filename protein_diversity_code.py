@@ -59,17 +59,6 @@ max_freq = np.array([[0.05,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]])
 
-#VNE value at Shannon Entropy Max: all amino acids at frequency 0.05
-omega = B50 * max_freq
-ent = -(omega * np.log2(omega))
-
-#Pairwise similarity maximum for two allele locus (C,E)
-(1/B50.loc['C','E']) * 0.5
-
-#VNE maximum at two allele locus (C,W)
-max_vne = np.array([[0.090909,0],[0,0.07878788]])
-omega = max_vne * np.array([[0.5,0],[0,0.5]])
-ent = -(omega * np.log2(omega))
 
 data_list = glob.glob("./*.fasta")
 
