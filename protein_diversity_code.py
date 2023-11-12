@@ -26,20 +26,6 @@ def shannon_info(site, AAs=AAs):
 
     return abs(temp_info)
 
-#Von Neumann Entropy (density matrix) - used for Shannon Entropy calculations
-
-def vn_entropy(column,sub_matrix,matrix_label):
-
-    column_diag = np.zeros((sub_matrix.shape[0],sub_matrix.shape[0]))
-
-    for aa in matrix_label:
-        column_diag[matrix_label.index(aa),matrix_label.index(aa)] = column.count(aa) / len(column)
-
-    omega = column_diag * sub_matrix
-
-    entropy = - omega * vlog_20(omega)
-
-    return entropy.to_numpy().trace()
 
 LG_aa_order = ['A','R','N','D','C','Q','E','G','H','I','L','K','M','F','P','S','T','W','Y','V']
 B50_aa_order = ['A','R','N','D','C','Q','E','G','H','I','L','K','M','F','P','S','T','W','Y','V','B','J','Z','X','*']
