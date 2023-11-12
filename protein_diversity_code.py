@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 
+## Input: one or more amino acid fasta files
+## (see data_list, below)
+
 from Bio import SeqIO, AlignIO
 import math
 import pandas as pd
@@ -89,9 +92,7 @@ max_vne = np.array([[0.090909,0],[0,0.07878788]])
 omega = max_vne * np.array([[0.5,0],[0,0.5]])
 ent = -(omega * np.log2(omega))
 
-data_list = glob.glob("FILE.fasta")
-
-#if alignment needed: AlignIO.read("./HIV-1_rev_mafft.fas",'fasta')
+data_list = glob.glob("./*.fasta")
 
 #calculate the diversity measures
 for currentfile in data_list:
