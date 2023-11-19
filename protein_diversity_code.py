@@ -83,4 +83,4 @@ for currentfile in data_list:
             shannon += shannon_info(column)
 
 
-    print("shannon-entropy: {:.4}".format(shannon/(i+1)))
+    print("shannon-entropy: {:.3f}".format(shannon/(i+1)))
