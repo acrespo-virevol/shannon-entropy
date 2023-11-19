@@ -1,7 +1,7 @@
 # shannon-entropy
 Shannon entropy calculation for amino acid multiple sequence alignment
 
-This repository contains a Python script and associated BLOSUM matrix to calculate shannon entropy for an amino acid multiple sequence alignment.
+This repository contains a Python script to calculate Shannon entropy for an amino acid multiple sequence alignment.
 It supports a scientific manuscript,
 Crespo-Bellido et al.
 https://www.biorxiv.org/content/10.1101/2023.11.08.565637v1
