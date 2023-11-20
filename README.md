@@ -10,4 +10,4 @@ The python code was simplified slightly
 from code written by Erik Lavington:
 https://github.com/elavington/CRESS-DNA-virus
 Very similar code was used
-for a paper by Dubey et al. (2023).
+for a paper by Dubey et al. (2023; https://doi.org/jhz5).
