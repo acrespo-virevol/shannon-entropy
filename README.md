@@ -11,3 +11,7 @@ from code written by Erik Lavington:
 https://github.com/elavington/CRESS-DNA-virus
 Very similar code was used
 for a paper by Dubey et al. (2023; https://doi.org/jhz5).
+
+The input sequence alignments
+are included
+in Zenodo record [8338471](https://doi.org/10.5281/zenodo.8338471).
