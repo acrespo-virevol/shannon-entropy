@@ -2,6 +2,7 @@
 Shannon entropy calculation for amino acid multiple sequence alignment
 
 This repository contains a Python script to calculate Shannon entropy for an amino acid multiple sequence alignment.
+
 It supports a scientific paper,
 Crespo-Bellido et al. 2024
 https://doi.org/npd8
